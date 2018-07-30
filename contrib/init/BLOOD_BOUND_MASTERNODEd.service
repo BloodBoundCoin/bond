@@ -1,0 +1,26 @@
+[Unit]
+Description=BLOOD_BOUND_MASTERNODE's distributed currency daemon
+After=network.target
+
+[Service]
+User=BLOOD_BOUND_MASTERNODE
+Group=BLOOD_BOUND_MASTERNODE
+
+Type=forking
+PIDFile=/var/lib/BLOOD_BOUND_MASTERNODEd/BLOOD_BOUND_MASTERNODEd.pid
+
+ExecStart=/usr/bin/BLOOD_BOUND_MASTERNODEd -daemon -pid=/var/lib/BLOOD_BOUND_MASTERNODEd/BLOOD_BOUND_MASTERNODEd.pid \
+          -conf=/etc/BLOOD_BOUND_MASTERNODE/BOND.conf -datadir=/var/lib/BLOOD_BOUND_MASTERNODEd
+
+ExecStop=-/usr/bin/BLOOD_BOUND_MASTERNODE-cli -conf=/etc/BLOOD_BOUND_MASTERNODE/BOND.conf \
+         -datadir=/var/lib/BLOOD_BOUND_MASTERNODEd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

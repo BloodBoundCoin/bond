@@ -1,0 +1,26 @@
+# /etc/conf.d/BLOOD_BOUND_MASTERNODEd: config file for /etc/init.d/BLOOD_BOUND_MASTERNODEd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/BLOOD_BOUND_MASTERNODE/BOND.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/BLOOD_BOUND_MASTERNODEd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/BLOOD_BOUND_MASTERNODEd.pid"
+
+# Where to write BLOOD_BOUND_MASTERNODEd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/BLOOD_BOUND_MASTERNODEd"
+
+# User and group to own BLOOD_BOUND_MASTERNODEd process
+#BITCOIND_USER="BLOOD_BOUND_MASTERNODE"
+#BITCOIND_GROUP="BLOOD_BOUND_MASTERNODE"
+
+# Path to BLOOD_BOUND_MASTERNODEd executable
+#BITCOIND_BIN="/usr/bin/BLOOD_BOUND_MASTERNODEd"
+
+# Nice value to run BLOOD_BOUND_MASTERNODEd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

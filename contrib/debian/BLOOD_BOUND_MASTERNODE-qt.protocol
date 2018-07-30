@@ -1,0 +1,11 @@
+[Protocol]
+exec=BLOOD_BOUND_MASTERNODE-qt '%u'
+protocol=BLOOD_BOUND_MASTERNODE
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

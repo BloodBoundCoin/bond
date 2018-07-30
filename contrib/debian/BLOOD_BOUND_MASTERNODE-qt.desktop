@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BLOOD_BOUND_MASTERNODE
+Comment=BLOOD_BOUND_MASTERNODE P2P Cryptocurrency
+Comment[fr]=BLOOD_BOUND_MASTERNODE, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BLOOD_BOUND_MASTERNODE, eşten eşe kriptografik sanal para birimi
+Exec=BLOOD_BOUND_MASTERNODE-qt %u
+Terminal=false
+Type=Application
+Icon=BLOOD_BOUND_MASTERNODE128
+MimeType=x-scheme-handler/BLOOD_BOUND_MASTERNODE;
+Categories=Office;Finance;
