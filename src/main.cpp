@@ -2128,15 +2128,9 @@ int64_t GetBlockValue(int nHeight)
 
     if (nHeight == 0) {
         nSubsidy = 1680000 * COIN;  //premine
-    } else if(nHeight >=1 && nHeight <= 100) { //PoW phase
+    } else if(nHeight >=1 && nHeight <= 998) { //PoW phase
 		nSubsidy = 30 * COIN;
-    } else if(nHeight >100 && nHeight <= 300) { //PoW phase
-		nSubsidy = 10 * COIN;
-    } else if(nHeight >300 && nHeight <= 500) { //PoW phase
-		nSubsidy = 20 * COIN;
-	} else if(nHeight > 500 && nHeight <= 999) { //PoW phase
-		nSubsidy = 30 * COIN; 
-    } else if(nHeight > 999 && nHeight <= 1000) {	// last PoW blocks
+    } else if(nHeight > 998 && nHeight <= 999) {	// last PoW blocks
 		nSubsidy = 100 * COIN;
         } else {
         nSubsidy = 50 * COIN;
