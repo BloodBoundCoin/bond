@@ -160,12 +160,12 @@ public:
         assert(hashGenesisBlock == uint256("bdb9e3905cbdcedb61d7be2e639ec9367bd76383f7e9654d89e805e1e537323a"));
         assert(genesis.hashMerkleRoot == uint256("21f11032224beb1aa8a1612f8be6d3500fb67b4a2a43ed8ac17299aa81affea1"));
 
-        vSeeds.push_back(CDNSSeedData("seed1", "77.55.236.166"));
-        vSeeds.push_back(CDNSSeedData("seed2", "77.55.238.25"));
-        vSeeds.push_back(CDNSSeedData("seed3", "194.182.75.151"));
+        vSeeds.push_back(CDNSSeedData("seed1", "77.55.214.206"));
+        vSeeds.push_back(CDNSSeedData("seed2", "80.211.198.60"));
+        vSeeds.push_back(CDNSSeedData("seed3", "80.211.200.202"));
 
 
-		base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 85);
+		base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 25);
 		base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 83);
 		base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);
 		base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x02)(0x4D)(0x23)(0x65).convert_to_container<std::vector<unsigned char> >();
