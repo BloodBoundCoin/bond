@@ -6639,4 +6639,4 @@ public:
         mapOrphanTransactions.clear();
         mapOrphanTransactionsByPrev.clear();
     }
-} instance_of_cmaincleanup;
+} instance_of_cmaincleanup; 
